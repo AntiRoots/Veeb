@@ -1,0 +1,259 @@
+<!doctype html>
+<html>
+  <head>
+
+    <meta charset="UTF-8">  
+    <title>Trip-trap-trull</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+
+    <style>
+      body {
+ 
+  margin: 60px;
+}
+
+
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+  
+}
+
+    </style>
+  </head>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+    import { getDatabase, ref, push, set, onValue } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBYHynIeKQgAzZgjHYSJLEFszKqXypmfYI",
+      authDomain: "anti21.firebaseapp.com",
+      databaseURL: "https://anti21-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "anti21",
+      storageBucket: "anti21.appspot.com",
+      messagingSenderId: "666778811212",
+      appId: "1:666778811212:web:e752a58b674c3eb5b72de9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db=getDatabase();
+    const kataloog=ref(db, "tic");
+    
+    window.lisaTeade=function(teade){
+        const uuskoht=push(kataloog);
+        set(uuskoht, teade);
+        document.getElementById('kast1').value=''; //see teeb teksti kasti tühjaks pärast Ok vajutamist
+       
+        
+    }
+    onValue(kataloog,kuva);
+            function kuva(viit){
+                let andmed=viit.val();
+                console.log(andmed);
+                let votmed=Object.keys(andmed);
+                let tulemus="";
+                for(let i=0; i<votmed.length; i++){
+                    tulemus += andmed[votmed[i]]+" "+"<input type='button' value='Tehtud!' onclick='kustuta(\""+votmed[i]+"\")'/> <br>";
+                }
+                kiht1.innerHTML=tulemus;
+            }
+    window.kustuta=function(kood){
+                if(window.confirm("Kas tehtud?")){
+                    set(ref(db, "tic/"+kood), null);
+                }
+            }
+
+</script>
+    
+
+  </script>
+
+  <body>
+ 
+  <div id="root"></div>
+  <br>
+  <div>
+  <input type="button" value="Uus mäng"  onclick="uus()" />
+  <div>
+  <a href="tegevused.html" target="_blanc"> Sisesta tegevused</a>
+  <br>
+  <br>
+
+  Tegevuste nimekiri:
+  <div id="kiht1"></div>
+    
+
+
+  
+</body>
+<script type="text/babel">
+
+
+function uus()
+    {
+      window.location.reload();   
+    }
+  
+
+function Square(props) {
+  return (
+    <button className="square" onClick={props.onClick}>
+      {props.value}
+    </button>
+  );
+}
+
+class Board extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      squares: Array(12).fill(null),
+      xIsNext: true,
+    };
+  }
+
+  handleClick(i) {
+    const squares = this.state.squares.slice();
+    if (calculateWinner(squares) || squares[i]) {
+      return;
+    }
+    squares[i] = this.state.xIsNext ? 'X' : 'O';
+    this.setState({
+      squares: squares,
+      xIsNext: !this.state.xIsNext,
+    });
+  }
+
+  renderSquare(i) {
+    return (
+      <Square
+        value={this.state.squares[i]}
+        onClick={() => this.handleClick(i)}
+      />
+    );
+  }
+
+  render() {
+   
+    const winner = calculateWinner(this.state.squares);
+    let status;
+    if (winner) {
+      status = 'Võitja: ' + winner;
+    } else {
+      status = 'Mängib: ' + (this.state.xIsNext ? 'X' : 'O');
+      
+    }
+
+    return (
+      <div>
+        <div className="status">{status}</div>
+        <div className="board-row">
+          {this.renderSquare(0)}
+          {this.renderSquare(1)}
+          {this.renderSquare(2)}
+        </div>
+        <div className="board-row">
+          {this.renderSquare(3)}
+          {this.renderSquare(4)}
+          {this.renderSquare(5)}
+        </div>
+        <div className="board-row">
+          {this.renderSquare(6)}
+          {this.renderSquare(7)}
+          {this.renderSquare(8)}
+        
+        </div> 
+      </div>
+      
+    );
+  }
+}
+
+class Game extends React.Component {
+  render() {
+    return (
+      <div className="game">
+        <div className="game-board">
+          <Board />
+        </div>
+        <div className="game-info">
+          <div>{/* status */}</div>
+          
+        </div>
+      </div>
+    );
+  }
+}
+function calculateWinner(squares) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }
+  return null;
+}
+// ========================================
+
+ReactDOM.render(
+  <Game />,
+  document.getElementById('root'),
+  
+);
+
+
+</script>
+</html>

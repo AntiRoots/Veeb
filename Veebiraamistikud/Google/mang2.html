@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mang1</title>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+            import {  getDatabase, ref, push, set, get, onValue, child } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+              apiKey: "AIzaSyBYHynIeKQgAzZgjHYSJLEFszKqXypmfYI",
+              authDomain: "anti21.firebaseapp.com",
+              databaseURL: "https://anti21-default-rtdb.europe-west1.firebasedatabase.app",
+              projectId: "anti21",
+              storageBucket: "anti21.appspot.com",
+              messagingSenderId: "666778811212",
+              appId: "1:666778811212:web:e752a58b674c3eb5b72de9"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db=getDatabase();
+            const kataloog=ref(db, "mangud");
+            window.mangijanimi="mangija"+parseInt(10000*Math.random());
+            let manguObj=null;
+            get(kataloog).then((sisend) => {
+             let m=sisend.val();
+            	console.log(m);
+	            let votmed=Object.keys(m);
+            	let leitud=null;
+            	for(let i=0; i<votmed.length; i++){
+	               if(m[votmed[i]].mangija2=="puudub"){
+	              leitud=votmed[i];
+    	   }
+    	}
+    	console.log(leitud);
+        if(leitud!=null){
+        manguObj=ref(db, "mangud/"+leitud);
+        onValue(manguObj, kuvaMang);
+	    set(ref(db, "mangud/"+leitud+"/mangija2"), window.mangijanimi);
+        spmina.innerText="0";
+	} else {
+        manguObj=push(kataloog);
+        onValue(manguObj, kuvaMang);
+	   set(child(manguObj, "mangija1"), window.mangijanimi);
+	   set(child(manguObj, "mangija2"), "puudub");
+       set(child(manguObj, "laud"), ".........");
+       set(child(manguObj, "teated"), "");
+       spmina.innerText="X";
+	}
+    
+  }); 
+  let m=null;
+  function kuvaMang(viit){
+     m=viit.val();
+     if(m.nimi1==null){
+	 spm1.innerText=m.mangija1;
+   }
+   else{
+      spm1.innerText=Object.values(m.nimi1);
+   }
+   if(m.nimi2==null){
+	 spm2.innerText=m.mangija2;
+   }
+   else{
+      spm2.innerText=Object.values(m.nimi2);
+   }
+	 console.log(m);
+	 let g=tahvel1.getContext("2d");
+     g.clearRect(0, 0, 300, 300);
+	 for(let rida=0; rida<3; rida++){
+	   for(let veerg=0; veerg<3; veerg++){
+	      g.font="60px Arial";
+	      g.fillText(m.laud[rida*3+veerg],  veerg*100+50, rida*100+50);
+	   }
+	 }
+     if(m.teated){
+	    //console.log(Object.values(m.teated));
+		kiht2.innerHTML=Object.values(m.teated).join("<br />");
+	 }
+   
+  }
+  function kelleKord(){
+     let loendur=0;
+	 for(let i=0; i<m.laud.length; i++){
+	    if(m.laud[i]=="."){loendur++;}
+	 }
+
+	 if(loendur % 2 == 0){return "0";}
+	 return "X";
+  }
+  
+  window.vajutus=function(e){
+    if(kelleKord()!==spmina.innerText){
+	   alert("vastase kord");
+	   return;
+	}
+    console.log(e.layerX, e.layerY);
+	//kuvage välja laua rea ja veeru number kuhu vajutati
+	console.log(Math.floor(e.layerY/100))
+	let koht=Math.floor(e.layerY/100)*3+Math.floor(e.layerX/100);
+	console.log(koht, m.laud[koht]);
+	if(m.laud[koht]=="."){
+	   let uus=m.laud.substring(0, koht)+spmina.innerText+m.laud.substring(koht+1);
+	   console.log(uus);
+       set(child(manguObj, "laud"),uus);
+	}
+
+  }
+  window.lisaTeade=function(teade){
+     if(spmina.innerText=="X"){
+     set(push(child(manguObj, "teated")), spm1.innerText+":"+teade);
+     }
+     else{
+      set(push(child(manguObj, "teated")), spm2.innerText+":"+teade);
+     }
+  }
+     window.lisaNimi=function(nimi){
+        if(spmina.innerText=="X"){
+     set(push(child(manguObj, "nimi1")), nimi);
+     
+   }
+   else{
+      set(push(child(manguObj, "nimi2")), nimi);
+      }
+  }
+
+          </script>
+
+    </head>
+    <body>
+        X=<span id="spm1"></span> ja 0=<span id="spm2"></span><br />
+        Mina olen <span id="spmina"></span>
+        <canvas id="tahvel1" width="300" height="300" onclick="vajutus(event)"></canvas>
+        <br/>
+         Teade<input type="text" id="kast1" />
+        <input type="button" value="OK" onclick="lisaTeade(kast1.value)" />
+        <br/>
+        Nimi<input type="text" id="nimi"/>
+        <input type="button" value="OK" onclick="lisaNimi(nimi.value)" />
+        <div id="kiht2"></div>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+        <script type="text/babel">
+        function kuva(){
+            ReactDOM.render(
+              <h1>Kell on {new Date().toLocaleTimeString()}</h1>,
+              
+              document.getElementById("kiht1")
+            );
+        }
+        </script>
+    </head>
+    <body onload="setInterval (kuva,1000)">
+        <div id="kiht1"></div>
+    </body>
+ 
+</html>

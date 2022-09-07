@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="kiht1"></div>
+    </body>
+    <script type="text/babel">
+        let name="Juku"
+        function kujundaNimi(obj){
+            return obj.eesnimi+" "+obj.perenimi;
+        }
+        let isik={
+            eesnimi:"Juhan",
+            perenimi:"Juured"
+        }
+        ReactDOM.render(
+          //<h2>Tere, {name}</h2>,
+          <h1>Tere, {kujundaNimi(isik)}</h1>,
+          document.getElementById("kiht1")
+        );
+    </script>
+</html>

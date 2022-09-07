@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- React -->
+    <script src="https://fb.me/react-15.3.0.min.js"></script>
+    <script src="https://fb.me/react-dom-15.3.0.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <!-- ReactFire -->
+    <script src="https://cdn.firebase.com/libs/reactfire/1.0.0/reactfire.min.js"></script>
+
+    <!-- throw-in-the-towel -->
+    <script src="https://npmcdn.com/throw-in-the-towel@2"></script>
+  
+    
+    <script >
+ 
+ const firebaseConfig = {
+      apiKey: "AIzaSyBYHynIeKQgAzZgjHYSJLEFszKqXypmfYI",
+      authDomain: "anti21.firebaseapp.com",
+      databaseURL: "https://anti21-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "anti21",
+      storageBucket: "anti21.appspot.com",
+      messagingSenderId: "666778811212",
+      appId: "1:666778811212:web:e752a58b674c3eb5b72de9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db=getDatabase();
+    const kataloog=ref(db, "tic");
+    export {db, kataloog};
+    </script>
+    <script type="text/babel" src="JS/todoAppOriginal.js"></script>
+    <script type="text/babel" src="JS/todoAppFirebaseExplicit.js"></script>
+    <script type="text/babel" src="JS/todoAppFirebaseImplicit.js"></script>
+  </head>
+    
+
+    </script>
+        <body>
+          <div class="todoAppContainer">
+            <h2>Plain React</h2>
+            <div id="todoApp1"></div>
+          </div>
+    
+          <div class="todoAppContainer">
+            <h2>React + Plain Firebase</h2>
+            <div id="todoApp2"></div>
+          </div>
+        </body>
+</html>

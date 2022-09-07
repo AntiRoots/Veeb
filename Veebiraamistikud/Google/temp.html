@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mang1</title>
+        <meta charset="utf-8" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+            import {  getDatabase, ref, push, set, get, onValue, child } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+    apiKey: "AIzaSyCaGEyIQLvMPrLETFXpUMpsy_eAS5kEuPM",
+    authDomain: "jaaguphkraamistikud21.firebaseapp.com",
+    databaseURL: "https://jaaguphkraamistikud21-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "jaaguphkraamistikud21",
+    storageBucket: "jaaguphkraamistikud21.appspot.com",
+    messagingSenderId: "278325228518",
+    appId: "1:278325228518:web:9b2fb94a35dc06a9431c27"
+  };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db=getDatabase();
+            const kataloog=ref(db, "temperatuurid");
+           window.saada=function(e){
+               let m=myRange.value;
+               //console.log(m);
+               let k=child(kataloog, "Anti");
+               set(k, parseInt(m));
+           }
+
+           onValue(kataloog, kuva);
+           function kuva(viit){
+              let andmed=viit.val();
+              joonis.data.labels=Object.keys(andmed);
+	            joonis.data.datasets[0].data=Object.values(andmed);
+	            joonis.update();
+           }
+          
+			  let joonis=null;
+  window.onload=function(){
+	    joonis=new Chart(document.getElementById("joonisekiht"), {
+		   type:'bar',
+		   data:{
+		      labels:[],
+			  datasets:[
+				  {
+					label: 'Temperatuurid',
+					data:[],
+					backgroundColor: "yellow"
+				  }
+			  
+			  ]			  
+		   }
+
+
+		})
+	  }
+        
+         
+
+
+          </script>
+
+    </head>
+    <body>
+      <div class="slidecontainer">
+  <input type="range" min="5" max="35" value="25"  id="myRange" onchange="saada()">
+</div>
+<div style="width: 900px; height: 500px">
+   <canvas id="joonisekiht"></canvas>
+ </div>
+    </body>
+</html>

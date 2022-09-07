@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Reacti katsetused</title>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="kiht1"></div>
+  </body>
+  <script type="text/babel">
+    function Paaritu(props){
+      return <h3> Arv  {props.arv} on paaritu</h3>
+    }
+    function Paaris(props){
+      return <h3>Arv {props.arv} on paaris</h3>
+    }
+      class Tiksuja extends React.Component{
+        constructor(props){
+            super(props);
+            this.state={nr:parseInt(this.props.algnr)};
+            //this.vajutus=this.vajutus.bind(this);
+        }
+
+        vajutus(samm){
+           this.setState(pState=>({nr:pState.nr+samm}));
+        }
+      
+        render(){
+           return <div><h1><button onClick={()=>this.vajutus(-1)}>Lahuta</button> 
+             {this.state.nr}
+             <button onClick={()=>this.vajutus(1)}>Liida</button>
+             </h1>
+             {(this.state.nr%2==0)?<Paaris arv={this.state.nr} />:<Paaritu arv={this.state.nr}/>}
+             </div>
+        }
+      }
+      ReactDOM.render(
+        <Tiksuja algnr="7" />,
+        document.getElementById("kiht1")
+      );
+  </script>
+</html>

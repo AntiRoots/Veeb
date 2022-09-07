@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html>
+  <head>
+     <title>Graaf</title>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.9.4/cytoscape.min.js"></script>
+	 <script>
+	    let graaf;
+	    function algus(){
+		  graaf=cytoscape({
+		     container: document.getElementById("kiht1"),
+			 elements: {
+			   nodes:	[
+						{data: {id: 'algus'}},
+						{data: {id: 'ots'}},
+						{data: {id: 'l6pp'}},
+						{data: {id: 'yksik'}},
+						{data: {id: 'yksik2'}}
+						],
+					
+				edges:[
+				{data: {source:'algus', target:'ots'}},
+				{data: {source:'ots', target:'l6pp'}},
+				{data: {source:'yksik', target:'yksik2'}}
+				
+				]
+				},
+			 style: [{selector: 'node', 
+                         style:{'label': 'data(id)', 'background-color': 'red'}}
+                        ]
+		  });
+		  otsing=graaf.elements().bfs({roots: '#yksik',directed:false});
+		  otsing.path.select();
+		  for(let i=0; i<otsing.path.length; i++){
+			console.log(otsing.path[i].id());
+		  }
+		}
+	 </script>
+  </head>
+  <body onload="algus()">
+    <div id="kiht1" style="width: 600px; height: 500px; background-color: yellow"></div>
+  </body>
+</html>

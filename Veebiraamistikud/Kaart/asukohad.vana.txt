@@ -1,0 +1,5 @@
+pohjalaius,idapikkus,tyyp,kirjeldus
+58.649205,25.997443,kodu,Järvetee9
+58.635236,25.556694,kool,Kastani4
+59.389781,24.895101,kodu,Suve12
+58.935508,23.541647,kool,HaapsaluKolled

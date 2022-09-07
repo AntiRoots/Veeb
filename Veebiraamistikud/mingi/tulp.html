@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Joonis</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script>
+	  let joonis;
+	  function algus(){
+	    joonis=new Chart(document.getElementById("joonisekiht"), {
+		   type:'bar',
+		   data:{
+		      labels:['Juku', 'Kati', 'Mati'],
+			  datasets:[
+				  {
+					label: 'isikud',
+					data:[170, 175, 172],
+					backgroundColor: "yellow"
+				  }
+			  
+			  ]			  
+		   },
+		   options:{
+		     scales:{
+			   yAxes:[
+			     {ticks:{beginAtZero: true}}
+			   ]
+			 }
+		   }
+
+		})
+	  }
+	  function vajutus1(){
+	     joonis.data.labels.push(kast1.value);
+		 joonis.data.datasets[0].data.push(parseInt(kast2.value));
+		 joonis.update();
+	  }
+	</script>
+  </head>
+  <body onload="algus()">
+     <div style="width: 1700px; height:1600px;"><canvas id="joonisekiht" ></canvas>
+	 <input type="text" id="kast1" placeholder="eesnimi" />
+	 <input type="number" id="kast2" placeholder="pikkus" />
+	 <input type="button" value="Lisa" onclick="vajutus1()" /></div>
+  </body>
+</html>

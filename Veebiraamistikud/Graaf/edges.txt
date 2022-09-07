@@ -1,0 +1,4 @@
+Tallinn,Tartu,168
+Haapsalu,Pärnu,125
+Tartu,Haapsalu,210
+Tallinn1,Tallinn,0

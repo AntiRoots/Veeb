@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>React</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="kiht1"></div>
+    </body>
+    <script type="text/babel">
+        class Loendur extends React.Component{
+            constructor(props){
+                super(props);
+                this.state={nr:parseInt(this.props.alg)};
+                this.vajutus=this.vajutus.bind(this);
+                this.tiksuja=setInterval(()=>this.tiksu(),1000);
+            }
+            tiksu(){
+                console.log(this.state.nr);
+                if(this.state.nr<1){
+                    clearInterval(this.tiksuja);
+                }
+                this.setState((state,props) => ({nr:state.nr-1}));
+            }
+            vajutus(){
+                this.setState({nr:parseInt(this.props.alg)}); //vajutades h1 pealkirjal siis muudab setState uuesti alg
+            }
+
+            render(){
+                return <h1 onClick={this.vajutus}>{(this.state.nr>0) ?this.state.nr : "Valmis!"}</h1> //kui state.nr on suurem 0 siis state.nr muidu "Valmis"
+            }
+        }
+        ReactDOM.render(
+          <Loendur alg="8"/>,
+          document.getElementById("kiht1")
+        );
+    </script>
+</html>

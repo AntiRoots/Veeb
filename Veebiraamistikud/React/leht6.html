@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>React</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="kiht1"></div>
+    </body>
+    <script type="text/babel">
+        class Kell extends React.Component{
+            constructor(props){
+                super(props);
+                this.state={aeg:new Date};
+                setInterval(()=>this.tiksu(),1000);
+            }
+            tiksu(){
+                this.setState({aeg:new Date()});
+            }
+
+            render(){
+                return <h1>Kell on {this.state.aeg.toLocaleTimeString()}</h1>
+            }
+        }
+        ReactDOM.render(
+          <Kell/>,
+          document.getElementById("kiht1")
+        );
+    </script>
+</html>

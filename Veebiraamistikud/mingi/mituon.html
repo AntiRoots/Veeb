@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Joonis</title>
+	<meta charset="utf-8" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script>
+	  let joonis;
+	  function algus(){
+	    joonis=new Chart(document.getElementById("joonisekiht"), {
+		   type:'bar',
+		   data:{
+		      labels:[],
+			  datasets:[
+				  {
+					//label: '',
+					data:[],
+					backgroundColor: "yellow"
+				  }
+			  
+			  ]			  
+		   },
+		   options:{
+		     scales:{
+			   yAxes:[
+			     {ticks:{beginAtZero: true}}
+			   ]
+			 }
+		   }
+
+		})
+	  }
+	  function vajutus1(){
+          let s6nad=kast1.value.split(' ');
+           // joonis.data.labels=[];
+          //joonis.data.datasets[0].data=[];
+        for (let i = 0; i < s6nad.length; i++) {
+           joonis.data.labels.push(s6nad[i]);
+            joonis.data.datasets[0].data.push(s6nad[i].length);
+            
+        }
+	    joonis.update();
+		 
+		 
+	  }
+	</script>
+  </head>
+  <body onload="algus()">
+     <div style="width: 1700px; height:1600px;"><canvas id="joonisekiht" ></canvas>
+	 <input type="text" id="kast1" placeholder="Lause" />
+	 <input type="button" value="Lisa" onclick="vajutus1()" /></div>
+  </body>
+</html>

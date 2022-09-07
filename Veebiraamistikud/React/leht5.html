@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>React</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="kiht1"></div>
+    </body>
+    <script type="text/babel">
+        function Uudis(props){
+           return (
+               <div>
+                <img src={props.pilt} width="25%" height="25%"/>
+                <h1> {props.pealkiri}</h1>
+                <p>{props.sisu}</p>
+               </div>);
+        }
+      
+        let element=(<div><div><Uudis pilt="Pildid/linnud.jpg" pealkiri="Uudis1" sisu="Selline lugu siis"/>
+            </div><div><Uudis pilt="Pildid/maastik.jpg" pealkiri="Uudis2" sisu="Selline teine lugu"/></div>
+            </div>)
+        ReactDOM.render(
+          element,
+          document.getElementById("kiht1")
+        );
+    </script>
+</html>

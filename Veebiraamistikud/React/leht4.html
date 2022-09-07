@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>React</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="kiht1"></div>
+    </body>
+    <script type="text/babel">
+        function Tervitus(props){
+           return <h1>Tere, {props.eesnimi} {props.perenimi}</h1>
+        }
+        class Murd extends React.Component{
+            render(){
+                return(<table><tbody>
+                    <tr><td>{this.props.lugeja}</td></tr>
+                    <tr><td>{this.props.nimetaja}</td></tr>
+                </tbody></table>);
+            }
+        }
+        let element=(<div><Tervitus eesnimi="Juku" perenimi="Juured"/>
+            <span>Kump on suurem- kas<Murd lugeja="3" nimetaja="4"/>
+                või <Murd lugeja="5" nimetaja="6"/></span></div>);
+        ReactDOM.render(
+          element,
+          document.getElementById("kiht1")
+        );
+    </script>
+</html>

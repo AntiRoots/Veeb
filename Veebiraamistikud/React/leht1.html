@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React</title>
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    </head>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+    import { getDatabase, ref, push, set, onValue } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-database.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBYHynIeKQgAzZgjHYSJLEFszKqXypmfYI",
+      authDomain: "anti21.firebaseapp.com",
+      databaseURL: "https://anti21-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "anti21",
+      storageBucket: "anti21.appspot.com",
+      messagingSenderId: "666778811212",
+      appId: "1:666778811212:web:e752a58b674c3eb5b72de9"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db=getDatabase();
+    const kataloog=ref(db, "tic");
+    
+    window.lisaTeade=function(teade){
+        const uuskoht=push(kataloog);
+        set(uuskoht, teade);
+        document.getElementById('kast1').value=''; //see teeb teksti kasti tühjaks pärast Ok vajutamist
+       
+        
+    }
+    onValue(kataloog,kuva);
+    function kuva(viit){
+        let andmed=viit.val();
+        let votmed=Object.keys(andmed);
+        let tulemus="";
+        for(let i=0; i<votmed.length; i++){
+            tulemus += andmed[votmed[i]]+"<br>";
+        }
+        kiht1.innerHTML=tulemus;
+        
+    }
+
+    
+
+  </script>
+
+    <script type="text/babel">
+class TodoApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { items: [], text: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>TODO</h3>
+        <TodoList items={this.state.items} />
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="new-todo">
+            What needs to be done?
+          </label>
+          <input
+            id="new-todo"
+            onChange={this.handleChange}
+            value={this.state.text}
+          />
+          <button>
+            Add #{this.state.items.length + 1}
+          </button>
+        </form>
+      </div>
+    );
+  }
+
+  handleChange(e) {
+    this.setState({ text: e.target.value });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    if (this.state.text.length === 0) {
+      return;
+    }
+    const newItem = {
+      text: this.state.text,
+      id: Date.now()
+    };
+    this.setState(state => ({
+      items: state.items.concat(newItem),
+      text: ''
+    }));
+  }
+}
+
+class TodoList extends React.Component {
+  render() {
+    return (
+      <ul>
+        {this.props.items.map(item => (
+          <li key={item.id}>{item.text}</li>
+        ))}
+      </ul>
+    );
+  }
+}
+
+ReactDOM.render(
+  <TodoApp />,
+  document.getElementById('todos-example')
+);
+    </script>
+        <body>
+            <div id="todos-example"></div>
+              <br>
+  Siseta teade:
+  <input type="=text" id="kast1"  name="elu"/>
+  <input type="button" value="OK" onclick="lisaTeade(kast1.value)"/>
+  <div id="kiht1"></div>
+        </body>
+</html>

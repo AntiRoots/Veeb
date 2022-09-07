@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IIVE</title>
+    <meta charset="utf-8" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+	<script>
+	   let m;
+	   let joonis;
+	   fetch("iive.txt").then(yhendus => yhendus.text()).
+	   then(sisu =>{
+	     m=sisu.split("\n").map(rida => rida.split(","));
+		 m.shift();
+		 let uued=[];
+		 for(let i=0; i<m.length; i++){
+		    m[i][0]=(m[i][0]);
+		    m[i][1]=parseInt(m[i][1]);
+			m[i][2]=parseInt(m[i][2]);
+			m[i][3]=parseInt(m[i][3]);
+			
+		    
+			let puudu=false;
+		    for(let j=4; j<7; j++){
+			  m[i][j]=parseFloat(m[i][j]);
+			  if(isNaN(m[i][j])){m[i][j]=0;}
+			}
+			if(!puudu){uued.push(m[i]);}
+			
+		 }
+		 m=uued;
+
+		 //console.log(m);
+		 synnid();
+		 });
+ 	  	
+		 
+	
+
+
+		 function synnid(){
+			
+			 synd=_.range().map(element =>[]);
+			 console.log(synd);
+			 m.forEach(rida => synd.push(rida[1]));
+			 
+
+			 joonis=new Chart(document.getElementById("joonisekiht"), {
+		   type:'bar',
+		   data:{
+		      labels:_.range(1919,2021),
+			  datasets:[
+				  {
+					label: 'Sünnid',
+					data:synd,
+					backgroundColor: "green"
+				  }
+			  
+			  ]			  
+		   }});
+		 }
+
+		 function surmad(){
+			
+			 surm=_.range().map(element =>[]);
+			 
+			 m.forEach(rida => surm.push(rida[2]));
+			
+
+			 joonis=new Chart(document.getElementById("joonisekiht"), {
+		   type:'bar',
+		   data:{
+		      labels:_.range(1919,2021),
+			  datasets:[
+				  {
+					label: 'Surmad',
+					data:surm,
+					backgroundColor: "red"
+				  }
+			  
+			  ]			  
+		   }});
+		 }
+
+		 function iive(){
+			
+			 loomulikiive=_.range().map(element =>[]);
+			 
+			 m.forEach(rida => loomulikiive.push(rida[3]));
+			
+			 joonis=new Chart(document.getElementById("joonisekiht"), {
+		   type:'bar',
+		   data:{
+		      labels:_.range(1919,2021),
+			  datasets:[
+				  {
+					label: 'Loomulik iive',
+					data:loomulikiive,
+					backgroundColor: "yellow"
+				  }
+			  
+			  ]			  
+		   }});
+		 }
+
+
+	</script>
+
+  </head>
+  <body>
+	<p id="demo"></p>
+    <div style="width: 900px; height: 500px">
+     <canvas id="joonisekiht"></canvas>
+	</div>
+	
+	<br>
+    <input type="button"  value="Sünnid" onclick="synnid()">
+    <br>
+    <input type="button"  value="Surmad" onclick="surmad()">
+    <br>
+    <input type="button"  value="Loomulikiive" onclick="iive()">
+  </body>
+  </html>

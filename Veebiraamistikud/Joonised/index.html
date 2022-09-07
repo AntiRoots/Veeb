@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+     <script>
+	   let t, g;
+	   function algus(){
+	      t=document.getElementById("tahvel");
+		  g=t.getContext("2d");
+		 
+	   }
+	   function vajutus1(){
+	      g.clearRect(0, 0, 400, 300);
+		  let arv1=parseInt(document.getElementById("kast1").value)
+          for (let i = 0; i <10; i++){
+          g.clearRect(0, 0, 400, 300);
+          g.beginPath();
+		  g.moveTo(100+(i+2), 200);
+		  g.lineTo(100+(i+2), 200-arv1);
+          g.moveTo(110+(i+2),200-arv1-10);
+          g.arc(100+(i+2),200-arv1-10,10,0,2*Math.PI,true)
+          g.moveTo(60+(i+2),200-arv1+20);
+          g.lineTo(140+(i+2),200-arv1+20);
+          g.moveTo(60+(i+2),250);
+          g.lineTo(100+(i+2), 200)
+          g.lineTo(140+(i+2), 250);
+          g.stroke();
+          g.set
+        }
+          
+	   }
+       function vajutus2(){
+	      
+		  let arv1=parseInt(document.getElementById("kast2").value)
+		  g.beginPath();
+		  g.moveTo(300, 200);
+		  g.lineTo(300, 200-arv1);
+          g.moveTo(310,200-arv1-10);
+          g.arc(300,200-arv1-10,10,0,2*Math.PI,true)
+          g.moveTo(260,200-arv1+20);
+          g.lineTo(340,200-arv1+20);
+          g.moveTo(260,250);
+          g.lineTo(300, 200)
+          g.lineTo(340, 250);
+		  g.stroke();
+	   }	   function vajutus3(){
+	      
+		  let arv1=parseInt(document.getElementById("kast3").value)
+		  g.beginPath();
+		  g.moveTo(500, 200);
+		  g.lineTo(500, 200-arv1);
+          g.moveTo(510,200-arv1-10);
+          g.arc(500,200-arv1-10,10,0,2*Math.PI,true)
+          g.moveTo(460,200-arv1+20);
+          g.lineTo(540,200-arv1+20);
+          g.moveTo(460,250);
+          g.lineTo(500, 200)
+          g.lineTo(540, 250);
+		  g.stroke();
+	   }
+
+	 </script>
+  </head>
+  <body onload="algus()">
+     <canvas id="tahvel" width="800" height="300"></canvas><br />
+	 <input type="number" id="kast1" />
+	 <input type="button" value="Joonista" onclick="vajutus1()" />
+     <input type="number" id="kast2" />
+	 <input type="button" value="Joonista" onclick="vajutus2()" />
+     <input type="number" id="kast3" />
+	 <input type="button" value="Joonista" onclick="vajutus3()" />
+  </body>
+</html>

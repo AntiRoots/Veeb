@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kodune1</title>
+    <meta charset="utf-8" />
+    <link 
+        rel="stylesheet" 
+        href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css"
+    />
+</head>
+
+<body style="background-color: green;">
+    <div id="map" style="width: 1200px; height: 400px; "></div>
+
+    <script
+        src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js">
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js">
+    </script>
+
+  
+
+    <script>
+
+  
+
+        var map = L.map('map').setView([58.6492, 25.99742], 14); 
+
+        mapLink ='<a href="http://openstreetmap.org">OpenStreetMap</a>';
+
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; ' + mapLink + ' Contributors',
+             }).addTo(map);
+
+
+		var drawnItems = new L.FeatureGroup(); // salvestatakse meie loodud elemendid
+		map.addLayer(drawnItems);
+
+    
+
+		var drawControl = new L.Control.Draw({
+			position: 'bottomleft', //nuppude asukoht
+			draw: {
+				polygon: {
+					shapeOptions: {
+						color: 'purple',
+            
+					},
+					allowIntersection: false,
+					drawError: {
+						color: 'orange',
+						timeout: 1000 // muudetakse polygoni värv oranziks 1000 ms
+					},
+					showArea: true,
+          metric: true, // muutes sell false siis näitab pindala aakrites
+       
+				},
+				polyline: {
+					shapeOptions: {
+						color: 'red'
+					},
+				},
+				rect: {
+					shapeOptions: {
+						color: 'red'
+					},
+				},
+				circle: {
+					shapeOptions: {
+						color: 'steelblue'
+					},
+				}
+      }
+		});
+		map.addControl(drawControl);
+
+    
+
+
+
+		map.on('draw:created', function (e) {   //see jäädvutanb meie loodud joone tüübi
+			var type = e.layerType,
+				layer = e.layer;
+      
+
+      if(type ==='polygon'){
+        var area=Math.round(L.GeometryUtil.geodesicArea(layer.getLatLngs()));
+        layer.bindPopup('Pindala on: '+area+'m<sup>2</sup>');
+        document.getElementById("area").innerHTML=area
+      }
+			drawnItems.addLayer(layer);
+		}
+    );
+
+
+
+
+
+    </script>
+    <div>"Hulknurga pindala on:"
+    <textarea id="area" rows="1" cols="6"></textarea>"m"<sup>2</sup></div>
+</body>
+</html>

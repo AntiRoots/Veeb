@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Kaart</title>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" />
+ <style>
+   body {padding: 0; margin: 0; }
+   html, body { height: 70%; width: 70%;}
+   img { border: 0;}
+   #kaardikiht {float:bottom; width:100%; height:100%;}
+ </style>
+ <script>
+   var kaart;
+   var hypik;
+   var marker1;
+   function algus(){
+    kaart = L.map('kaardikiht').setView([58.63, 25.95], 10); <!-- 10 on suurendus>
+    new L.TileLayer(
+  'https://tiles.maaamet.ee/tm/tms/1.0.0/hybriid@GMC/{z}/{x}/{y}.png&ASUTUS=TLU&ERIALA=rakendusinformaatika', {
+	attribution: "Map: <a  href='http://www.maaamet.ee/'>Maa-amet</a>",
+	tms: true,
+   }).addTo(kaart);
+     	hypik=L.popup(); 
+	kaart.on("click", vajutus);
+	L.marker([58.64919, 25.997435]).addTo(kaart);
+	L.marker([58.635219, 25.556721]).addTo(kaart);
+	marker1=L.marker([59.353876, 24.892551]);
+	
+	L.circle([59.440, 24.737], {radius: 1000}).addTo(kaart).bindPopup("Raudteejaam");
+	L.circle([59.427203, 24.773312], {radius: 1000, color: "yellow"}).addTo(kaart);
+	L.circle([58.635219, 25.55672], {radius: 70, color: "red"}).addTo(kaart); 
+	L.rectangle([[58.652383, 25.995864],[58.648809, 25.995113]]).addTo(kaart);
+
+   }
+      function vajutus(e){
+	     hypik.setLatLng(e.latlng).
+		 setContent("Vajutasid "+e.latlng.toString()).openOn(kaart);
+		 //L.marker(e.latlang).addTo(kaart);
+   }
+   function lisa(){
+		marker1.addTo(kaart)
+   }
+      function eemalda(){
+		marker1.remove(kaart)
+   }
+
+  </script>
+ </head>  
+ <body onload="algus()">
+ <h3>Põltsamaa</h3>
+ <input type="button" value="Lisa" onclick="lisa()">
+ <input type="button" value="Eemalda" onclick="eemalda()">
+  <div id="kaardikiht"></div>
+ </body>
+</html>
