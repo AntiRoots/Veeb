@@ -39,11 +39,12 @@ Nende filtrite puhul kehtivad samad reeglid ja põhimõtted nagu kursuse filtris
 ### Kasutajad
 Kui oled sisse logitud, siis LOGI SISSE asemel tekkib vastav teave, millised õigused on sisse logitud kasutajal.
 
-•	õpilane
- 
-•	õppejõud
- 
-•	administraator nn. haldus
+* <img width="65" alt="Screenshot_47" src="https://user-images.githubusercontent.com/91607985/211170604-76fc666e-ea68-41d9-92b4-3fba5ee58d96.png">
+
+* <img width="67" alt="Screenshot_48" src="https://user-images.githubusercontent.com/91607985/211170606-399bc53f-8268-4541-bae4-7c47f1cd226c.png">
+
+* <img width="59" alt="Screenshot_49" src="https://user-images.githubusercontent.com/91607985/211170612-40375f15-8b65-406b-8159-f49188d24578.png">
+
  
 Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale nupp LISA. Sellel klikides avaneb modaalaken LOENGU LISAMINE TUNNIPLAANI.
  
