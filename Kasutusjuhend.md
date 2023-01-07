@@ -45,10 +45,13 @@ Kui oled sisse logitud, siis LOGI SISSE asemel tekkib vastav teave, millised õi
 
 * <img width="59" alt="Screenshot_49" src="https://user-images.githubusercontent.com/91607985/211170612-40375f15-8b65-406b-8159-f49188d24578.png">
 
- 
-Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale nupp LISA. Sellel klikides avaneb modaalaken LOENGU LISAMINE TUNNIPLAANI.
- 
 #### Administraator
+
+Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale nupp LISA. Sellel klikides avaneb modaalaken LOENGU LISAMINE TUNNIPLAANI.
+
+<img width="695" alt="Screenshot_62" src="https://user-images.githubusercontent.com/91607985/211170670-55c0c6ed-c260-4e5d-a554-03ffdb9bdc53.png">
+
+
 ##### Uue loengu lisamine
 Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab lisada ainult ühte õppeainet. Õppeaine valikuks avaneb rippmenüü, kust saab valida juba sisestatud õppeaineid või lisada uus õppeaine valides rippmenüüst Lisa uus…
     
