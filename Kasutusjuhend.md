@@ -2,26 +2,39 @@
 
 ## Üldine
 Uuendatud tunniplaani on sisse logides võimalik kasutada kasutajale antud õigusi (õpilase, õppejõu või administraatorina nn. haldus). Tunniplaani on võimalik ka lihtsalt vaadata ja filtreerida, kuid siis puudub ligipääs õppeinfole.
- 
-Filtrite plokk asub vasakus küljes, mille all on TÜHJENDA nupp, mis puhastab valitud piirangud filtritest. Üksikutes filtrites saab rakendata rohkem kui ühe piirangut, välja arvatud AJAVAHEMIK, kus saab rakendata ainult ühte piirangut korraga.
 
+Filtrite plokk asub vasakus küljes, mille all on TÜHJENDA nupp, mis puhastab valitud piirangud filtritest. Üksikutes filtrites saab rakendata rohkem kui ühe piirangut, välja arvatud AJAVAHEMIK, kus saab rakendata ainult ühte piirangut korraga.
+ <img width="699" alt="Screenshot_46" src="https://user-images.githubusercontent.com/91607985/211170173-8ee51fcd-ef45-4be2-baea-7b70d460c1fa.png">
 Päises asuvad Tallinna Ülikooli Haapsalu kolledži logo, millele klikkides avatakse uues aknas Haapsalu kolledži kodulehekülg. Nupud SAHTEL ja RIIUL ning LOGI SISSE nupp.
  
 
 ### Filtrid
 #### Kursused
-  Klikkides filtril avaneb rippmenüü
-Kus saab valida soovitud kursuse või koolituse. Kui soovid lisada rohkem kui ühe kursuse või koolituse, tuleb peale igat valikut klikkida filtri tühjal pinnal ning rippmenüüst lisada järgmine piirang. 
-Piiranguid filtrist saab puhastada kas ükshaaval või kõik korraga. Ükshaaval puhastades tuleb klikkida vahetult kursuse lõpus oleval x-il.   
+Klikkides filtril avaneb rippmenüü. Kus saab valida soovitud kursuse või koolituse.
+
+<img width="141" alt="Screenshot_54" src="https://user-images.githubusercontent.com/91607985/211170275-2470950a-e8f3-453b-9226-2247c9b0767d.png">
+
+Kui soovid lisada rohkem kui ühe kursuse või koolituse, tuleb peale igat valikut klikkida filtri tühjal pinnal ning rippmenüüst lisada järgmine piirang.
+
+<img width="149" alt="Screenshot_55" src="https://user-images.githubusercontent.com/91607985/211170307-b29fdf81-a412-4ef6-9e80-ea1f5ddd7fbd.png">
+
+Piiranguid filtrist saab puhastada kas ükshaaval või kõik korraga. Ükshaaval puhastades tuleb klikkida vahetult kursuse lõpus oleval x-il.
+
+<img width="144" alt="Screenshot_56" src="https://user-images.githubusercontent.com/91607985/211170428-75583afa-0404-470a-9445-fc8a00c0e48f.png">
+<img width="137" alt="Screenshot_60" src="https://user-images.githubusercontent.com/91607985/211170569-d08f3b16-bec7-4404-b887-f1d9574e12ed.png">
+
+
 Kui aga soovid puhastada kogu filtri siis tuleb klikkida filtriakna lõpus oleval x-il.
+
+<img width="138" alt="Screenshot_58" src="https://user-images.githubusercontent.com/91607985/211170465-cd442ba9-9656-48ad-88c4-b8d34902c68d.png">
+<img width="139" alt="Screenshot_61" src="https://user-images.githubusercontent.com/91607985/211170576-c3e6d6c2-c41d-491e-9a9e-6eb7b186a29e.png">
+
   
 #### Õppeaine, Õppejõud, Ruum
 Nende filtrite puhul kehtivad samad reeglid ja põhimõtted nagu kursuse filtris. 
 
+<img width="342" alt="Screenshot_59" src="https://user-images.githubusercontent.com/91607985/211170500-5e1ab709-2ef9-4a3e-973e-00e6ed761373.png">
 
-
-
-	
 
 ### Kasutajad
 Kui oled sisse logitud, siis LOGI SISSE asemel tekkib vastav teave, millised õigused on sisse logitud kasutajal.
