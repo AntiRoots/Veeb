@@ -3,6 +3,8 @@
 
 # Haapsalu kolledži tunniplaani kasutusjuhend.
 
+
+
 ## Üldine
 Uuendatud tunniplaani on sisse logides võimalik kasutada kasutajale antud õigusi (õpilase, õppejõu või administraatorina nn. haldus). Tunniplaani on võimalik ka lihtsalt vaadata ja filtreerida, kuid siis puudub ligipääs õppeinfole.
 
@@ -57,7 +59,7 @@ Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale 
 <img width="695" alt="Screenshot_62" src="https://user-images.githubusercontent.com/91607985/211170670-55c0c6ed-c260-4e5d-a554-03ffdb9bdc53.png">
 
 
-##### Uue loengu lisamine
+##### *Uue loengu lisamine*
 Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab tunniplaani lisada ainult ühte õppeainet. Õppeaine valikuks avaneb rippmenüü, kust saab valida juba sisestatud õppeaineid või lisada uus õppeaine valides rippmenüüst [Lisa uus...](#Lisa)
 
 <img width="127" alt="Screenshot_64" src="https://user-images.githubusercontent.com/91607985/211214094-d4495e27-ab94-4238-9e8c-54cde07fa482.png">
@@ -108,13 +110,13 @@ Kui kõik kohustuslikud väljad on täidetud, siis vajutades nupule SALVESTA, av
 
 <div id="Lisa"></div>
 
-##### Uue õppeaine, õppejõu, kursuse ja ruumi lisamine. 
+##### *Uue õppeaine, õppejõu, kursuse ja ruumi lisamine* 
 Kui on vajadus lisada uus õppeaine, õppejõud, kursus või ruumi, siis klikkides vastaval lahtri avaneb rippmenüü, mille esimene valik on Lisa uus…
 
 <img width="123" alt="Screenshot_76" src="https://user-images.githubusercontent.com/91607985/211216082-7e77c3b9-4b75-44a2-a59c-1f2ed3f7d725.png"> <img width="122" alt="Screenshot_77" src="https://user-images.githubusercontent.com/91607985/211216092-f5326579-e334-43cd-8ca0-0b6f76db6c86.png"> <img width="122" alt="Screenshot_78" src="https://user-images.githubusercontent.com/91607985/211216098-01d45aa9-ce7d-4fde-a012-9be6f598c46e.png"> <img width="122" alt="Screenshot_79" src="https://user-images.githubusercontent.com/91607985/211216105-0c571860-2da4-4b1d-b29b-c910dd723fb3.png">
 
        
-##### Õppeaine lisamise modaal
+###### Õppeaine lisamise modaal
 Kui klikkida õppeaine rippmenüüs real Lisa uus.., siis avaneb modaal UUE ÕPPEAINE LISAMINE. Kui on soov sisestada korraga rohkem kui üks õppeaine. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil.
 
 <img width="296" alt="Screenshot_80" src="https://user-images.githubusercontent.com/91607985/211216282-6fd3299c-92f1-49c9-8848-39a828cf1fbf.png">
@@ -229,7 +231,7 @@ Kustutamisel kuvatakse vastavalt modaal KINNITA KUSTUTAMINE.
  <img width="321" alt="Screenshot_107" src="https://user-images.githubusercontent.com/91607985/211218245-531dfaec-24c3-4e30-8f1f-6b903898e8e5.png">
 
 
-##### Õppeinfo
+##### *Õppeinfo*
 Õppeinfo lisamiseks ja nägemiseks tuleb klikkida soovitud õppeainel. Vaikimisi on kõigil õppeainetel olemas Ainekaart ja järgmised toimumisajad. Ainekaardi koodil klikkides avaneb veebibrauseri uues aknas ÕIS 2 olev ainekaart.
 
 <img width="404" alt="Screenshot_110" src="https://user-images.githubusercontent.com/91607985/211218872-56c7a2c6-e440-40e4-94a4-924cf52bd146.png">
@@ -255,7 +257,7 @@ Nupud + (6) ja X (7) on vajalikud uue kodutöö lisamiseks või olemasoleva kust
 
 <img width="195" alt="Screenshot_115" src="https://user-images.githubusercontent.com/91607985/211219112-f63aa785-4692-4ce9-88a7-51cebd3a4432.png">
  
-  Kui kõik soovitud väljad on sisestatud, siis salvestamiseks klikkida salvestus ikoonil  , see järel avaneb kontroll küsimusega modaal.
+  Kui kõik soovitud väljad on sisestatud, siis salvestamiseks klikkida salvestus ikoonil, see järel avaneb kontroll küsimusega modaal.
   
  <img width="243" alt="Screenshot_116" src="https://user-images.githubusercontent.com/91607985/211219134-6e6198a8-a26c-4bb6-afb4-1e93a91cdad8.png">
  
@@ -270,4 +272,14 @@ Kui vajutada salvestus ikooni kõrval oleva X nupul avaneb kontroll küsimusega 
 
  
 **NB! Ei saa lisada kodutöid minevikku ja enne esimes loengu algust.**
+
+##### *Tunniplaani muutmine*
+
+Tunniplaani juba salvestatud õppeaine muutmiseks, tuleb hoverdada vastaval päeval oleval õppeainel mida soovitakse muuta. Rea lõppu tekkib pliiatsi ikoon, millel klikkides avaneb vahetult valitud rea alla modaal LOENGU MUUTMINE TUNNIPLAANIS.
+
+![info](https://user-images.githubusercontent.com/91607985/211220717-54fb3ad0-a4e2-46f1-8ad6-bcaaa07fc12c.gif)
+
+Selles modalis saab muuta kõike. Võimalik on muuta õppeainet, õppejõudu(de), kursust(id), ruumi(e), kuupäeva, mahtu, algus ja lõpu aega.
+
+
 
