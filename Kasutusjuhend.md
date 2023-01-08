@@ -48,7 +48,7 @@ Kui oled sisse logitud, siis LOGI SISSE asemel tekkib vastav teave, millised õi
 
 * <img width="59" alt="Screenshot_49" src="https://user-images.githubusercontent.com/91607985/211170612-40375f15-8b65-406b-8159-f49188d24578.png">
 
-#### Administraator
+#### Administraator nn. haldus
 
 Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale nupp LISA. Sellel klikides avaneb modaalaken LOENGU LISAMINE TUNNIPLAANI.
 
@@ -68,6 +68,7 @@ Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab
      
      
 Ühel õppeainel saab olla üks kuni mitu õppejõudu, kursust ja ruumi
+
 <img width="427" alt="Screenshot_68" src="https://user-images.githubusercontent.com/91607985/211215113-996d2cf8-e91c-42bd-8a99-3622ff97c59a.png">
 
 Valitud õppejõudu, kursust või ruumi saab eemaldada klikkides x-il ja lisad soovikorral uuesti.
@@ -229,23 +230,44 @@ Kustutamisel kuvatakse vastavalt modaal KINNITA KUSTUTAMINE.
 
 
 ##### Õppeinfo
-Õppeinfo lisamiseks ja nägemiseks tuleb klikkida soovitud õppeainel. Vaikimisi on kõigil õppeainetel olemas Ainekaart ja järgmised toimumis ajad. Ainekaardi lõpus oleval ikoonil klikkides avaneb veebibrauseri uues aknas ÕIS 2 olev ainekaart.
+Õppeinfo lisamiseks ja nägemiseks tuleb klikkida soovitud õppeainel. Vaikimisi on kõigil õppeainetel olemas Ainekaart ja järgmised toimumis ajad. Ainekaardi koodil klikkides avaneb veebibrauseri uues aknas ÕIS 2 olev ainekaart.
+
+<img width="404" alt="Screenshot_110" src="https://user-images.githubusercontent.com/91607985/211218872-56c7a2c6-e440-40e4-94a4-924cf52bd146.png">
  
 Kui õppeinfosse on lisatud informatsioon, siis kuvatakse õppeaine lahtris info ikoon.
+
+<img width="406" alt="Screenshot_111" src="https://user-images.githubusercontent.com/91607985/211218881-0929c65c-af84-460d-826e-ac89e432ebf0.png">
  
-Õppeinfot muutmist lubav pliiatsi ikoon on olemas halduse ja õppejõu vaates. Tudengi ja mitte loginud vaates seda ei ole. Klikkide pliiatsi ikoonil laieneb vaade. 
-Väli kommentaar (1) on lisa informatsiooni lisamiseks ja see kuvatakse tunniplaanis kaldkirjaga õppeaine nimetuse all.
+Õppeinfot muutmist lubav pliiatsi ikoon on olemas halduse ja õppejõu vaates. Tutengi vaates on ainult vaatamise võimalus. Klikkide pliiatsi ikoonil laieneb vaade.
+
+<img width="119" alt="Screenshot_119" src="https://user-images.githubusercontent.com/91607985/211219030-337c2ddf-a260-4368-8ae5-09042faf76fb.png">
+
+<img width="408" alt="Screenshot_112" src="https://user-images.githubusercontent.com/91607985/211219046-bd2f390f-5867-4c86-ab8e-f2e6f27c0ce5.png">
+
+
+Väli kommentaar (1) on lisa informatsiooni sisestamiseks ja see kuvatakse tunniplaanis kaldkirjaga õppeaine nimetuse all.
  
 Iseseisava töö kirjeldus (2), piirangute vaba väli. Tähtaega (3) saab sisestada käsitsi või klikkides sobival kuupäeval. Kui on soovi saab lisada ka kodutöö juurde lingi õppematerjaliga (4). Kui lisada õppematerjali link siis hiljem kuvatakse see kodutööde juures tekstina õppematerjalid, millel klikkides avaneb veebibrauseri uues aknas õppematerjali link. Kui on olemas videoloengu link, siis saab selle lisada lahtrisse (5). Hiljem kuvatakse ruumi lahtris videoloengu ikoon, millel klikkides avaneb veebibrauseri uues aknas videoloeng.
+
+<img width="402" alt="Screenshot_114" src="https://user-images.githubusercontent.com/91607985/211219103-56740611-5ba3-4acc-b921-c1210e29b5d5.png">
  
 Nupud + (6) ja X (7) on vajalikud uue kodutöö lisamiseks või olemasoleva kustutamiseks. Rea kustutamisel kuvatakse eelnevalt kontroll küsimusega modaal.
+
+<img width="195" alt="Screenshot_115" src="https://user-images.githubusercontent.com/91607985/211219112-f63aa785-4692-4ce9-88a7-51cebd3a4432.png">
  
   Kui kõik soovitud väljad on sisestatud, siis salvestamiseks klikkida salvestus ikoonil  , see järel avaneb kontroll küsimusega modaal.
+  
+ <img width="243" alt="Screenshot_116" src="https://user-images.githubusercontent.com/91607985/211219134-6e6198a8-a26c-4bb6-afb4-1e93a91cdad8.png">
  
 Valides kinnituseks jah, salvestatakse andmed ja kuvatakse õppeinfo vaates.
+
+<img width="413" alt="Screenshot_117" src="https://user-images.githubusercontent.com/91607985/211219138-f7e8526d-b941-45a3-992e-372c95fec310.png">
  
-Esimene kodutöö ja tema tähtaeg (1). Teine kodutöö ja tema tähtaeg (2). Kuna teisel kodutööl oli lisatud ka õppematerjali link, siis on klikitav tekst Õppematerjalid, millel klikkides avaneb õppematerjal veebibrauseri uues aknas.
-Kui vajutada salvestus ikooni kõrval oleva X nupul avaneb kontroll küsimusega modaal
+Esimene kodutöö ja tema tähtaeg (1). Teine kodutöö ja tema tähtaeg (2). Kuna teisel kodutööl oli lisatud ka õppematerjali link, siis tekst **Õppematerjalid** on klikitav, millel klikkides avaneb õppematerjal veebibrauseri uues aknas.
+Kui vajutada salvestus ikooni kõrval oleva X nupul avaneb kontroll küsimusega modaal.
+
+<img width="238" alt="Screenshot_118" src="https://user-images.githubusercontent.com/91607985/211219188-8ac052e5-843b-4ebf-b07a-89173f6cbee1.png">
+
  
-NB! Ei saa lisada kodutöid möödunud aega.
+**NB! Ei saa lisada kodutöid minevikku ja enne esimes loengu algust.**
 
