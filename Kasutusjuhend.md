@@ -15,8 +15,10 @@
     * [Kursuse lisamise modaal](#kursus)
     * [Ruumi lisamise modaal](#ruum)
     * [Õppeaine, õppejõu, kursuse ja ruumi muutmine või kustutamine](#muutmine)
-  * [ *Õppeinfo*](#info)
-  * [*Tunniplaani muutmine*](#plaanMuutmine)
+    * [ *Õppeinfo*](#info)
+    * [*Tunniplaani muutmine*](#plaanMuutmine)
+  * [Õpilane](#opilane)
+  * [Õppejõud](#joud)
 
 
 
@@ -256,7 +258,7 @@ Kustutamisel kuvatakse vastavalt modaal KINNITA KUSTUTAMINE.
 
 <div id="info"></div>
 
-##### *Õppeinfo*
+###### *Õppeinfo*
 Õppeinfo lisamiseks ja nägemiseks tuleb klikkida soovitud õppeainel. Vaikimisi on kõigil õppeainetel olemas Ainekaart ja järgmised toimumisajad. Ainekaardi koodil klikkides avaneb veebibrauseri uues aknas ÕIS 2 olev ainekaart.
 
 <img width="404" alt="Screenshot_110" src="https://user-images.githubusercontent.com/91607985/211218872-56c7a2c6-e440-40e4-94a4-924cf52bd146.png">
@@ -301,13 +303,28 @@ Kui vajutada salvestus ikooni kõrval oleva X nupul avaneb kontroll küsimusega 
 
 <div id="plaanMuutmine"></div>
 
-##### *Tunniplaani muutmine*
+###### *Tunniplaani muutmine*
 
 Tunniplaani juba salvestatud õppeaine muutmiseks, tuleb hoverdada vastaval päeval oleval õppeainel mida soovitakse muuta. Rea lõppu tekkib pliiatsi ikoon, millel klikkides avaneb vahetult valitud rea alla modaal LOENGU MUUTMINE TUNNIPLAANIS.
 
 ![info](https://user-images.githubusercontent.com/91607985/211220717-54fb3ad0-a4e2-46f1-8ad6-bcaaa07fc12c.gif)
 
-Selles modalis saab muuta kõike. Võimalik on muuta õppeainet, õppejõudu(de), kursust(id), ruumi(e), kuupäeva, mahtu, algus ja lõpu aega.
+Selles modaalis saab muuta kõike. Võimalik on muuta õppeainet, õppejõudu(de), kursust(id), ruumi(e), kuupäeva, mahtu, algus ja lõpu aega.
 
+<div id="opilane"></div>
+
+#### Õpilane
+
+Õpilase (tudengi) vaade on piiratud saab lisada ja muuta [filtrites](#filtrid) olevaid piiranguid ja näha tunniplaanis olevate ainete õppeinfot.
+
+<img width="593" alt="Screenshot_120" src="https://user-images.githubusercontent.com/91607985/211222727-db54016d-9588-47dc-913e-124ae936d112.png">
+
+<div id="joud"></div>
+
+#### Õppejõud
+
+Õppejõu vaates lisandub õigus teha muudatusi [õppeinfos](#info), tekkib muutvist lubav pliiatsi ikoon.
+
+<img width="583" alt="Screenshot_121" src="https://user-images.githubusercontent.com/91607985/211222911-81f76be0-6ac6-4181-a04f-dea80529b773.png">
 
 
