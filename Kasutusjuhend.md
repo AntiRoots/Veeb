@@ -1,8 +1,4 @@
 
-## Content
-
-* [Chapter 1](#Chapter1)
-* [Chapter 2](#Chapter2)
 
 
 # Haapsalu kolledži tunniplaani kasutusjuhend.
@@ -62,46 +58,56 @@ Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale 
 
 
 ##### Uue loengu lisamine
-Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab tunniplaani lisada ainult ühte õppeainet. Õppeaine valikuks avaneb rippmenüü, kust saab valida juba sisestatud õppeaineid või lisada uus õppeaine valides rippmenüüst Lisa uus…
+Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab tunniplaani lisada ainult ühte õppeainet. Õppeaine valikuks avaneb rippmenüü, kust saab valida juba sisestatud õppeaineid või lisada uus õppeaine valides rippmenüüst [Lisa uus...](#Lisa)
 
 <img width="127" alt="Screenshot_64" src="https://user-images.githubusercontent.com/91607985/211214094-d4495e27-ab94-4238-9e8c-54cde07fa482.png">
 
 Õppejõu, kursuse ja ruumi lisamisel kehtivad samad põhimõtted.
-     
+
+<img width="124" alt="Screenshot_65" src="https://user-images.githubusercontent.com/91607985/211214931-699c5b49-9ab2-49ae-964d-657895d1a2db.png"> <img width="121" alt="Screenshot_66" src="https://user-images.githubusercontent.com/91607985/211214933-449c5b7d-4163-4531-b7f4-2df77e066cb5.png"> <img width="123" alt="Screenshot_67" src="https://user-images.githubusercontent.com/91607985/211214936-421649f6-fee3-4785-8084-7c4fc8d4bba1.png">
      
      
 Ühel õppeainel saab olla üks kuni mitu õppejõudu, kursust ja ruumi
- 
-Valitud õppejõudu, kursust või ruumi saab eemaldada klikkides x-il, mis on vahetult peale valikut.
-  
-Kuupäeva ja aja lisamiseks õppeainele toimub ridade kaupa. Kõige pealt tuleb valida kuupäev. Kuupäeva saab sisestada kalendrist või sisestada klaviatuurilt. Klaviatuurilt sisestades pannakse automaatselt päeva ja kuu järele punkt, piisab ainult kuupäeva-kuu-aasta sisestamisest. Kalendrist valides tekkib valitud kuupäevale hall ümar ring, millele klikkides sisestatakse kuupäev lahtrisse. Sama kuupäeva 16.02.2023 klaviatuurilt sisestades on vaja sisestada järjest arvud 16022023.
+<img width="427" alt="Screenshot_68" src="https://user-images.githubusercontent.com/91607985/211215113-996d2cf8-e91c-42bd-8a99-3622ff97c59a.png">
 
+Valitud õppejõudu, kursust või ruumi saab eemaldada klikkides x-il ja lisad soovikorral uuesti.
 
+<img width="379" alt="Screenshot_69" src="https://user-images.githubusercontent.com/91607985/211215128-586a1b82-ae9f-473d-8207-8d42b002042f.png">
 
+Kuupäeva ja aja lisamiseks õppeainele toimub ridade kaupa. Kõige pealt tuleb valida kuupäev. Kuupäeva saab sisestada kalendrist või sisestada klaviatuurilt. Klaviatuurilt sisestades pannakse automaatselt päeva ja kuu järele punkt, piisab ainult kuupäeva-kuu-aasta sisestamisest. Kalendrist valides tekkib valitud kuupäevale hall ümar ring, millele klikkides sisestatakse kuupäev lahtrisse. Näiteks võib kuupäeva 16.02.2023 sisestada kalendrist õigel kuupäeval klikkides või klaviatuurilt sisestades on vaja sisestada järjest arvud 16022023.
 
-
-
-	
-
+<img width="309" alt="Screenshot_70" src="https://user-images.githubusercontent.com/91607985/211215309-948ef055-06f3-40c2-b257-34f3f0923649.png">
 
 Maht on antud päeval valitud õppeaine järjest olevate akadeemiliste tundide hulk. Üks akadeemiline tund on võrdne 45 minutiga. Seda lahtrit ei pea täitma. Lahtri täitmisel aga genereeritakse automaatselt loengu lõpu kellaaeg.
+
+<img width="277" alt="Screenshot_71" src="https://user-images.githubusercontent.com/91607985/211215358-cd49cb6c-72f8-4bf4-9053-5f10b9dea7f5.png">
  
-Algus on loengu algusaeg, vaikimisi on see pandud 10:00. Lahtril klikkides avaneb rippmenüü, kus on valikus enam kasutusel olevad loengu algusajad
-•	10:00
-•	14:15
-•	17:30
-•	18:00
+Algus on loengu algusaeg, vaikimisi on see 10:00. Lahtril klikkides avaneb rippmenüü, kus on valikus enam kasutusel olevad loengu algusajad
+* 10:00
+* 14:15
+* 17:30
+* 18:00
+
 Kellaaega saab sisestada ka käsitsi, näiteks 09:15
+
+<img width="274" alt="Screenshot_72" src="https://user-images.githubusercontent.com/91607985/211215776-5cd00932-1d37-48e1-974f-13850d9b89e9.png">
+
  
 Kui soovitakse lisada õppeainele veel toimumise aegu, siis saab seda teha, kui lisad uus rida. Selleks tuleb vajutada rea lõpus olevale + nupule. Ridade arv ei ole piiratud.
- 
- 
+
+<img width="427" alt="Screenshot_73" src="https://user-images.githubusercontent.com/91607985/211215846-43131302-5f44-47d1-8faf-6ae4f9abd7a4.png">
+
 Lahter lõuna omab kahte valikut, kas EI või JAH. Valiku JAH korral lisatakse loengu lõpuajale automaatselt 60 minutit. JAH rakendub juhul, kui lõpuaeg läheb üle 13:59. Valikut JAH saab muuta, kui klikkida lahtril.
+
+<img width="420" alt="Screenshot_74" src="https://user-images.githubusercontent.com/91607985/211215864-471219a3-c249-4695-90c8-7066e613353e.png">
  
- 
-Kui kõik kohustuslikud väljad on täidetud, siis vajutades nupule SALVESTA avaneb modaalaken 
- 
-##### Uue õppeaine, õppejõu, kursuse ja ruumi lisamine. <div id="Lisa_uus"></div>
+Kui kõik kohustuslikud väljad on täidetud, siis vajutades nupule SALVESTA, avaneb modaalaken lisamine õnnestus.
+
+<img width="226" alt="Screenshot_75" src="https://user-images.githubusercontent.com/91607985/211215969-2c0c3115-692f-410e-8717-dd0d3cb0770c.png">
+
+<div id="Lisa"></div>
+
+##### Uue õppeaine, õppejõu, kursuse ja ruumi lisamine. 
 Kui on vajadus lisada uus õppeaine, õppejõud, kursus või ruumi, siis klikkides vastaval lahtri avaneb rippmenüü, mille esimene valik on Lisa uus…
        
 ##### Õppeaine lisamise modaal
@@ -176,18 +182,3 @@ Kui vajutada salvestus ikooni kõrval oleva X nupul avaneb kontroll küsimusega 
  
 NB! Ei saa lisada kodutöid möödunud aega.
 
-
-
-
-
-## Chapter 1 <div id="Chapter1"></div>
-
-Some text here.  
-Some text here.
-Some text here.
-
-## Chapter 2 <span id="Chapter2"><span>
-
-Some text here.  
-Some text here.
-Some text here
