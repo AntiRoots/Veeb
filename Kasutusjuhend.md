@@ -94,7 +94,7 @@ Kellaaega saab sisestada ka käsitsi, näiteks 09:15
 <img width="274" alt="Screenshot_72" src="https://user-images.githubusercontent.com/91607985/211215776-5cd00932-1d37-48e1-974f-13850d9b89e9.png">
 
  
-Kui soovitakse lisada õppeainele veel toimumise aegu, siis saab seda teha, kui lisad uus rida. Selleks tuleb vajutada rea lõpus olevale + nupule. Ridade arv ei ole piiratud.
+Kui soovitakse lisada õppeainele veel toimumiseaegu, siis saab seda teha, kui lisad uus rida. Selleks tuleb vajutada rea lõpus olevale + nupule. Ridade arv ei ole piiratud.
 
 <img width="427" alt="Screenshot_73" src="https://user-images.githubusercontent.com/91607985/211215846-43131302-5f44-47d1-8faf-6ae4f9abd7a4.png">
 
@@ -230,7 +230,7 @@ Kustutamisel kuvatakse vastavalt modaal KINNITA KUSTUTAMINE.
 
 
 ##### Õppeinfo
-Õppeinfo lisamiseks ja nägemiseks tuleb klikkida soovitud õppeainel. Vaikimisi on kõigil õppeainetel olemas Ainekaart ja järgmised toimumis ajad. Ainekaardi koodil klikkides avaneb veebibrauseri uues aknas ÕIS 2 olev ainekaart.
+Õppeinfo lisamiseks ja nägemiseks tuleb klikkida soovitud õppeainel. Vaikimisi on kõigil õppeainetel olemas Ainekaart ja järgmised toimumisajad. Ainekaardi koodil klikkides avaneb veebibrauseri uues aknas ÕIS 2 olev ainekaart.
 
 <img width="404" alt="Screenshot_110" src="https://user-images.githubusercontent.com/91607985/211218872-56c7a2c6-e440-40e4-94a4-924cf52bd146.png">
  
