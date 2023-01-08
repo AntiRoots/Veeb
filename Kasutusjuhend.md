@@ -109,57 +109,124 @@ Kui kõik kohustuslikud väljad on täidetud, siis vajutades nupule SALVESTA, av
 
 ##### Uue õppeaine, õppejõu, kursuse ja ruumi lisamine. 
 Kui on vajadus lisada uus õppeaine, õppejõud, kursus või ruumi, siis klikkides vastaval lahtri avaneb rippmenüü, mille esimene valik on Lisa uus…
+
+<img width="123" alt="Screenshot_76" src="https://user-images.githubusercontent.com/91607985/211216082-7e77c3b9-4b75-44a2-a59c-1f2ed3f7d725.png"> <img width="122" alt="Screenshot_77" src="https://user-images.githubusercontent.com/91607985/211216092-f5326579-e334-43cd-8ca0-0b6f76db6c86.png"> <img width="122" alt="Screenshot_78" src="https://user-images.githubusercontent.com/91607985/211216098-01d45aa9-ce7d-4fde-a012-9be6f598c46e.png"> <img width="122" alt="Screenshot_79" src="https://user-images.githubusercontent.com/91607985/211216105-0c571860-2da4-4b1d-b29b-c910dd723fb3.png">
+
        
 ##### Õppeaine lisamise modaal
 Kui klikkida õppeaine rippmenüüs real Lisa uus.., siis avaneb modaal UUE ÕPPEAINE LISAMINE. Kui on soov sisestada korraga rohkem kui üks õppeaine. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil.
-  
+
+<img width="296" alt="Screenshot_80" src="https://user-images.githubusercontent.com/91607985/211216282-6fd3299c-92f1-49c9-8848-39a828cf1fbf.png">
+
 Soovimatu rea saab kustutada kui vajutada rea lõpus oleval X
+
+<img width="297" alt="Screenshot_81" src="https://user-images.githubusercontent.com/91607985/211216297-8d38775f-cbad-43c4-a489-6b95f54c2c00.png">
+<img width="296" alt="Screenshot_82" src="https://user-images.githubusercontent.com/91607985/211216305-841861ba-eff9-4b6b-98d9-adceb1efe3d4.png">
   
 Kõik väljad on kohustuslikud ning piiranguga on väli EAP, kuhu saab sisestada ainult täisarvulise väärtuse.
-Kui kõik väljad on korrektselt sisestatud, siis vajutades salvesta nuppu, avaneb kontrollküsimusega modaal, JAH EI. Kinnitades oma valiku salvestatakse uus õppeaine või suunatakse sind tagasi lisamise vaatesse.
+Kui kõik väljad on korrektselt sisestatud, siis vajutades salvesta nuppu, avaneb kontrollküsimusega modaal. Kinnitades oma valiku salvestatakse uus õppeaine(d) või suunatakse sind tagasi lisamise vaatesse.
+
+<img width="334" alt="Screenshot_84" src="https://user-images.githubusercontent.com/91607985/211216641-b84255db-a337-4e36-b3b4-a04f7d96bfb5.png">
+
+Kui valisid jah, siis automaatselt muudetakse uus õppeaine aktiivseks. Kui sisestada rohkem kui üks õppeaine muutb aktiivseks viimane.
+
+<img width="337" alt="Screenshot_85" src="https://user-images.githubusercontent.com/91607985/211216660-692f4f08-8d01-44a9-9a85-89743874cafc.png">
+<img width="540" alt="Screenshot_86" src="https://user-images.githubusercontent.com/91607985/211216667-84643ca6-9a16-4018-a5d2-00f60c05f248.png">
 
 
+Kui aga soovid ilma salvestamata väljuda, siis on modaali ülal paremal x nupp, millel vajutades suletakse **ilma hoiatamata** lisamise modaal ja andmeid ei salvestata.
 
+<img width="293" alt="Screenshot_92" src="https://user-images.githubusercontent.com/91607985/211217192-bddfe4a8-8967-4a2a-8d63-647d1a62f7f4.png">
 
-
-Kui valisid jah, siis automaatselt muudetakse uus õppeaine aktiivseks 
-
-Kui aga soovid ilma salvestamata väljuda, siis on modaali ülal paremal x nupp, millel vajutades suletakse ilma hoiatamata lisamise modaal ja andmeid ei salvestata.
  
 ###### Õppejõu lisamise modaal
-Kui klikkida õppejõu rippmenüüs real Lisa uus.., siis avaneb modaal UUE ÕPPEJÕU LISAMINE. Kui on soov sisestada korraga rohkem kui üks õppeaine. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil 
+Kui klikkida õppejõu rippmenüüs real Lisa uus.., siis avaneb modaal UUE ÕPPEJÕU LISAMINE. Kui on soov sisestada korraga rohkem kui üks õppej]ud. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil.
+
+<img width="262" alt="Screenshot_87" src="https://user-images.githubusercontent.com/91607985/211217040-2a1f199b-5db3-486e-92d3-5777a14dd126.png">
+
  Soovimatu rea saab kustutada kui vajutada rea lõpus oleval X
+ 
+<img width="220" alt="Screenshot_88" src="https://user-images.githubusercontent.com/91607985/211217055-edb89ca5-9b45-4a6e-aa5d-ea8c339f0ad8.png">
+ 
   
 Kõik väljad on kohustuslikud
-Kui kõik väljad on korrektselt sisestatud, siis vajutades salvesta nuppu, avaneb kontrollküsimusega modaal, JAH EI. Kinnitades oma valiku salvestatakse uus(ed) õppejõud või suunatakse sind tagasi lisamise vaatesse.   
-Kui valisid jah, siis suunatakse sind loengu lisamise vaatesse ja õppejõu lahter on eel täidetud uue(te) õppejõudude nimega. 
+Kui kõik väljad on korrektselt sisestatud, siis vajutades salvesta nuppu, avaneb kontrollküsimusega modaal. Kinnitades oma valiku salvestatakse uus(ed) õppejõud või suunatakse sind tagasi lisamise vaatesse.
+
+<img width="295" alt="Screenshot_89" src="https://user-images.githubusercontent.com/91607985/211217077-38a2f98d-dc47-4247-9dd4-11657fc9133c.png">
+
+Kui valisid jah, siis suunatakse sind loengu lisamise vaatesse ja õppejõu lahter on eel täidetud uue(te) õppejõudude nimega.
+
+<img width="400" alt="Screenshot_90" src="https://user-images.githubusercontent.com/91607985/211217084-19a88a82-96d7-4ea9-b0ca-1dd37075289d.png">
+
 Kui aga soovid ilma salvestamata väljuda, siis on modaali ülal paremal x nupp, millel vajutades suletakse ilma hoiatamata lisamise modaal ja andmeid ei salvestata.
+
+<img width="264" alt="Screenshot_91" src="https://user-images.githubusercontent.com/91607985/211217089-cfcd7187-9ccd-4436-a2b4-57186a28c9ac.png">
+
  
 ###### Kursuse lisamise modaal
 Kui klikkida kursuse rippmenüüs real Lisa uus.., siis avaneb modaal UUE KURSUSE LISAMINE. Kui on soov sisestada korraga rohkem kui üks õppeaine. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil
+
+<img width="215" alt="Screenshot_93" src="https://user-images.githubusercontent.com/91607985/211217341-c49cf93a-e3c3-43a9-9ec9-7302778650d9.png">
  
 Soovimatu rea saab kustutada kui vajutada rea lõpus oleval X  
-Kõik väljad on kohustuslikud. Kui kõik väljad on korrektselt sisestatud, siis vajutades salvesta nuppu, avaneb kontrollküsimusega modaal, JAH EI. Kinnitades oma valiku salvestatakse uus(ed) kursused või suunatakse sind tagasi lisamise vaatesse.  
+
+<img width="253" alt="Screenshot_94" src="https://user-images.githubusercontent.com/91607985/211217352-012bde76-b22e-4c64-acd9-4e8de10ac363.png">
+
+Kõik väljad on kohustuslikud. Kui kõik väljad on korrektselt sisestatud, siis vajutades salvesta nuppu, avaneb kontrollküsimusega modaal. Kinnitades oma valiku salvestatakse uus(ed) kursused või suunatakse sind tagasi lisamise vaatesse.
+
+<img width="331" alt="Screenshot_95" src="https://user-images.githubusercontent.com/91607985/211217364-60751cd8-27eb-4d18-96d9-aa9678d497a9.png">
+
+
 Kui valisid jah, siis suunatakse sind loengu lisamise vaatesse ja kursuse lahter on eel täidetud uue(te) kursuste lühenditega.
+
+<img width="517" alt="Screenshot_96" src="https://user-images.githubusercontent.com/91607985/211217370-92412ebf-7810-4a69-a8b4-795b9fe69e16.png">
+
  
 ###### Ruumi lisamise modaal
 Kui klikkida ruumi rippmenüüs real Lisa uus.., siis avaneb modaal UUE RUUMI LISAMINE. Kui on soov sisestada korraga rohkem kui ühte ruumi. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil.
+
+<img width="231" alt="Screenshot_97" src="https://user-images.githubusercontent.com/91607985/211217546-01f6fe6a-4713-40e2-bdf0-2f2efe94c825.png">
+
  
 Soovimatu rea saab kustutada kui vajutada rea lõpus oleval X  
-Väli on kohustuslik ning sellel ei ole piiranguid. Kui kõik väljad on sisestatud ning vajutades salvesta nuppu , avaneb kontrollküsimusega modaal, JAH EI. Kinnitades oma valiku salvestatakse uus(ed) ruumid või suunatakse sind tagasi lisamise vaatesse. 
+
+<img width="224" alt="Screenshot_98" src="https://user-images.githubusercontent.com/91607985/211217556-85756560-07fb-419a-91b7-4b6bdea3e7d8.png">
+
+Väli on kohustuslik ning sellel ei ole piiranguid. Kui kõik väljad on sisestatud ning vajutades salvesta nuppu , avaneb kontrollküsimusega modaal. Kinnitades oma valiku salvestatakse uus(ed) ruumid või suunatakse sind tagasi lisamise vaatesse.
+
+<img width="340" alt="Screenshot_99" src="https://user-images.githubusercontent.com/91607985/211217586-fceb66ab-d4d9-433d-835c-082538a98027.png">
+
 Kui valisid jah, siis suunatakse sind loengu lisamise vaatesse ja ruumi lahter on eel täidetud uue(te) ruumidega.
+
+<img width="518" alt="Screenshot_100" src="https://user-images.githubusercontent.com/91607985/211217596-c48ab86c-30f6-49e1-a09b-0dbda8065ba5.png">
+
  
 ###### Õppeaine, õppejõu, kursuse ja ruumi muutmine või kustutamine.
-Õppeaine, õppejõu, kursuse ja ruumi muutmiseks või kustutamiseks on oluline, et soovitud lahtris oleks aktiivne muutmist või kustutamist vajav kirje. Lahtris võib olla ainult üks kirje muidu ei aktiveeru hoverdamisel muutmist ja kustutamist lubav pliiatsi ikoon. 
- 
+Õppeaine, õppejõu, kursuse ja ruumi muutmiseks või kustutamiseks on oluline, et soovitud lahtris oleks aktiivne muutmist või kustutamist vajav kirje. Lahtris võib olla ainult üks kirje muidu ei aktiveeru hoverdamisel muutmist ja kustutamist lubav pliiatsi ikoon.
+
+![info](https://user-images.githubusercontent.com/91607985/211217938-51678a3c-906c-4fb1-9ed3-5bd55504dd04.gif)
 
 Klikkides kirje ees oleval pliiatsil avaneb kontrollküsimusega modaal. KAS SOOVID MUUTA. 
+
+<img width="159" alt="Screenshot_101" src="https://user-images.githubusercontent.com/91607985/211218157-23d44ab9-6535-4027-9c01-504d3d65865f.png">
+
  
-Klikkides JAH avaneb vastava kirje muutmise aken, vaata näidiseid. Avanenud aknas saad teha soovitud muutuseid ning muutused salvestada.    
+Klikkides JAH avaneb vastava kirje muutmise aken, vaata näidiseid. Avanenud aknas saad teha soovitud muutuseid ning muutused salvestada. 
+
+<img width="292" alt="Screenshot_102" src="https://user-images.githubusercontent.com/91607985/211218257-0b1c4f8a-7d7d-4658-9b4a-24beb4f001dd.png">
+<img width="292" alt="Screenshot_103" src="https://user-images.githubusercontent.com/91607985/211218258-2ab5b855-d25f-4d0d-88a0-87cfa0b0ab4b.png">
+<img width="294" alt="Screenshot_109" src="https://user-images.githubusercontent.com/91607985/211218429-16a980a2-0718-4f79-bb84-22bbdcfcb976.png">
+<img width="289" alt="Screenshot_105" src="https://user-images.githubusercontent.com/91607985/211218270-a868fe41-04da-4978-b3dc-9ddf0d47171f.png">
+
+
 Salvestamisel kuvatakse kontroll küsimusega modaal.
- 
+
+ <img width="333" alt="Screenshot_106" src="https://user-images.githubusercontent.com/91607985/211218236-aded096d-4692-4c1c-93c2-80640c292de2.png">
+
 Kustutamisel kuvatakse vastavalt modaal KINNITA KUSTUTAMINE.
- 
+
+ <img width="321" alt="Screenshot_107" src="https://user-images.githubusercontent.com/91607985/211218245-531dfaec-24c3-4e30-8f1f-6b903898e8e5.png">
+
 
 ##### Õppeinfo
 Õppeinfo lisamiseks ja nägemiseks tuleb klikkida soovitud õppeainel. Vaikimisi on kõigil õppeainetel olemas Ainekaart ja järgmised toimumis ajad. Ainekaardi lõpus oleval ikoonil klikkides avaneb veebibrauseri uues aknas ÕIS 2 olev ainekaart.
