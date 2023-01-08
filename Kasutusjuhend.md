@@ -3,6 +3,21 @@
 
 # Haapsalu kolledži tunniplaani kasutusjuhend.
 
+**Sisukord**
+
+* [Filtrid](#filtrid)
+* [Kasutajad](#kasutajad)
+  * [Administraator nn. haldus](#haldus)
+    * [*Uue loengu lisamine*](#uusLoeng)
+    * [*Uue õppeaine, õppejõu, kursuse ja ruumi lisamine* ](#uus)
+    * [Õppeaine lisamise modaal](#õAine)
+    * [Õppejõu lisamise modaal](#õJõud)
+    * [Kursuse lisamise modaal](#kursus)
+    * [Ruumi lisamise modaal](#ruum)
+    * [Õppeaine, õppejõu, kursuse ja ruumi muutmine või kustutamine](#muutmine)
+  * [ *Õppeinfo*](#info)
+  * [*Tunniplaani muutmine*](#plaanMuutmine)
+
 
 
 ## Üldine
@@ -50,6 +65,8 @@ Kui oled sisse logitud, siis LOGI SISSE asemel tekkib vastav teave, millised õi
 
 * <img width="59" alt="Screenshot_49" src="https://user-images.githubusercontent.com/91607985/211170612-40375f15-8b65-406b-8159-f49188d24578.png">
 
+<div id="haldus"></div>
+
 #### Administraator nn. haldus
 
 Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale nupp LISA. Sellel klikides avaneb modaalaken LOENGU LISAMINE TUNNIPLAANI.
@@ -58,9 +75,10 @@ Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale 
 
 <img width="695" alt="Screenshot_62" src="https://user-images.githubusercontent.com/91607985/211170670-55c0c6ed-c260-4e5d-a554-03ffdb9bdc53.png">
 
+<div id="uusLoeng"></div>
 
 ##### *Uue loengu lisamine*
-Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab tunniplaani lisada ainult ühte õppeainet. Õppeaine valikuks avaneb rippmenüü, kust saab valida juba sisestatud õppeaineid või lisada uus õppeaine valides rippmenüüst [Lisa uus...](#Lisa)
+Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab tunniplaani lisada ainult ühte õppeainet. Õppeaine valikuks avaneb rippmenüü, kust saab valida juba sisestatud õppeaineid või lisada uus õppeaine valides rippmenüüst [Lisa uus...](#uus)
 
 <img width="127" alt="Screenshot_64" src="https://user-images.githubusercontent.com/91607985/211214094-d4495e27-ab94-4238-9e8c-54cde07fa482.png">
 
@@ -108,14 +126,15 @@ Kui kõik kohustuslikud väljad on täidetud, siis vajutades nupule SALVESTA, av
 
 <img width="226" alt="Screenshot_75" src="https://user-images.githubusercontent.com/91607985/211215969-2c0c3115-692f-410e-8717-dd0d3cb0770c.png">
 
-<div id="Lisa"></div>
+<div id="uus"></div>
 
 ##### *Uue õppeaine, õppejõu, kursuse ja ruumi lisamine* 
 Kui on vajadus lisada uus õppeaine, õppejõud, kursus või ruumi, siis klikkides vastaval lahtri avaneb rippmenüü, mille esimene valik on Lisa uus…
 
 <img width="123" alt="Screenshot_76" src="https://user-images.githubusercontent.com/91607985/211216082-7e77c3b9-4b75-44a2-a59c-1f2ed3f7d725.png"> <img width="122" alt="Screenshot_77" src="https://user-images.githubusercontent.com/91607985/211216092-f5326579-e334-43cd-8ca0-0b6f76db6c86.png"> <img width="122" alt="Screenshot_78" src="https://user-images.githubusercontent.com/91607985/211216098-01d45aa9-ce7d-4fde-a012-9be6f598c46e.png"> <img width="122" alt="Screenshot_79" src="https://user-images.githubusercontent.com/91607985/211216105-0c571860-2da4-4b1d-b29b-c910dd723fb3.png">
 
-       
+<div id="õAine"></div> 
+
 ###### Õppeaine lisamise modaal
 Kui klikkida õppeaine rippmenüüs real Lisa uus.., siis avaneb modaal UUE ÕPPEAINE LISAMINE. Kui on soov sisestada korraga rohkem kui üks õppeaine. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil.
 
@@ -141,7 +160,8 @@ Kui aga soovid ilma salvestamata väljuda, siis on modaali ülal paremal x nupp,
 
 <img width="293" alt="Screenshot_92" src="https://user-images.githubusercontent.com/91607985/211217192-bddfe4a8-8967-4a2a-8d63-647d1a62f7f4.png">
 
- 
+<div id="õJõud"></div> 
+
 ###### Õppejõu lisamise modaal
 Kui klikkida õppejõu rippmenüüs real Lisa uus.., siis avaneb modaal UUE ÕPPEJÕU LISAMINE. Kui on soov sisestada korraga rohkem kui üks õppej]ud. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil.
 
@@ -165,6 +185,7 @@ Kui aga soovid ilma salvestamata väljuda, siis on modaali ülal paremal x nupp,
 
 <img width="264" alt="Screenshot_91" src="https://user-images.githubusercontent.com/91607985/211217089-cfcd7187-9ccd-4436-a2b4-57186a28c9ac.png">
 
+ <div id="kursus"></div>
  
 ###### Kursuse lisamise modaal
 Kui klikkida kursuse rippmenüüs real Lisa uus.., siis avaneb modaal UUE KURSUSE LISAMINE. Kui on soov sisestada korraga rohkem kui üks õppeaine. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil
@@ -184,7 +205,8 @@ Kui valisid jah, siis suunatakse sind loengu lisamise vaatesse ja kursuse lahter
 
 <img width="517" alt="Screenshot_96" src="https://user-images.githubusercontent.com/91607985/211217370-92412ebf-7810-4a69-a8b4-795b9fe69e16.png">
 
- 
+<div id="ruum"></div> 
+
 ###### Ruumi lisamise modaal
 Kui klikkida ruumi rippmenüüs real Lisa uus.., siis avaneb modaal UUE RUUMI LISAMINE. Kui on soov sisestada korraga rohkem kui ühte ruumi. Siis on võimalik lisada soovitud arv uusi ridu, kui klikkida rea lõpus oleval +märgil.
 
@@ -203,6 +225,8 @@ Kui valisid jah, siis suunatakse sind loengu lisamise vaatesse ja ruumi lahter o
 
 <img width="518" alt="Screenshot_100" src="https://user-images.githubusercontent.com/91607985/211217596-c48ab86c-30f6-49e1-a09b-0dbda8065ba5.png">
 
+
+<div id="muutmine"></div> 
  
 ###### Õppeaine, õppejõu, kursuse ja ruumi muutmine või kustutamine.
 Õppeaine, õppejõu, kursuse ja ruumi muutmiseks või kustutamiseks on oluline, et soovitud lahtris oleks aktiivne muutmist või kustutamist vajav kirje. Lahtris võib olla ainult üks kirje muidu ei aktiveeru hoverdamisel muutmist ja kustutamist lubav pliiatsi ikoon.
@@ -230,6 +254,7 @@ Kustutamisel kuvatakse vastavalt modaal KINNITA KUSTUTAMINE.
 
  <img width="321" alt="Screenshot_107" src="https://user-images.githubusercontent.com/91607985/211218245-531dfaec-24c3-4e30-8f1f-6b903898e8e5.png">
 
+<div id="info"></div>
 
 ##### *Õppeinfo*
 Õppeinfo lisamiseks ja nägemiseks tuleb klikkida soovitud õppeainel. Vaikimisi on kõigil õppeainetel olemas Ainekaart ja järgmised toimumisajad. Ainekaardi koodil klikkides avaneb veebibrauseri uues aknas ÕIS 2 olev ainekaart.
@@ -272,6 +297,9 @@ Kui vajutada salvestus ikooni kõrval oleva X nupul avaneb kontroll küsimusega 
 
  
 **NB! Ei saa lisada kodutöid minevikku ja enne esimes loengu algust.**
+
+
+<div id="plaanMuutmine"></div>
 
 ##### *Tunniplaani muutmine*
 
