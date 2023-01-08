@@ -1,3 +1,10 @@
+
+## Content
+
+* [Chapter 1](#Chapter1)
+* [Chapter 2](#Chapter2)
+
+
 # Haapsalu kolledži tunniplaani kasutusjuhend.
 
 ## Üldine
@@ -49,12 +56,16 @@ Kui oled sisse logitud, siis LOGI SISSE asemel tekkib vastav teave, millised õi
 
 Kui kasutajal on administraatori õigused, siis tekkib vasakule filtrite kohale nupp LISA. Sellel klikides avaneb modaalaken LOENGU LISAMINE TUNNIPLAANI.
 
+<img width="695" alt="Screenshot_63" src="https://user-images.githubusercontent.com/91607985/211214007-efe599ef-8658-4e15-af44-6049a5326e7b.png">
+
 <img width="695" alt="Screenshot_62" src="https://user-images.githubusercontent.com/91607985/211170670-55c0c6ed-c260-4e5d-a554-03ffdb9bdc53.png">
 
 
 ##### Uue loengu lisamine
-Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab lisada ainult ühte õppeainet. Õppeaine valikuks avaneb rippmenüü, kust saab valida juba sisestatud õppeaineid või lisada uus õppeaine valides rippmenüüst Lisa uus…
-    
+Uue loengu lisamine toimub modaalaknas LOENGU LISAMINE TUNNIPLAANI. Korraga saab tunniplaani lisada ainult ühte õppeainet. Õppeaine valikuks avaneb rippmenüü, kust saab valida juba sisestatud õppeaineid või lisada uus õppeaine valides rippmenüüst Lisa uus…
+
+<img width="127" alt="Screenshot_64" src="https://user-images.githubusercontent.com/91607985/211214094-d4495e27-ab94-4238-9e8c-54cde07fa482.png">
+
 Õppejõu, kursuse ja ruumi lisamisel kehtivad samad põhimõtted.
      
      
@@ -90,7 +101,7 @@ Lahter lõuna omab kahte valikut, kas EI või JAH. Valiku JAH korral lisatakse l
  
 Kui kõik kohustuslikud väljad on täidetud, siis vajutades nupule SALVESTA avaneb modaalaken 
  
-##### Uue õppeaine, õppejõu, kursuse ja ruumi lisamine.
+##### Uue õppeaine, õppejõu, kursuse ja ruumi lisamine. <div id="Lisa_uus"></div>
 Kui on vajadus lisada uus õppeaine, õppejõud, kursus või ruumi, siis klikkides vastaval lahtri avaneb rippmenüü, mille esimene valik on Lisa uus…
        
 ##### Õppeaine lisamise modaal
@@ -164,3 +175,19 @@ Esimene kodutöö ja tema tähtaeg (1). Teine kodutöö ja tema tähtaeg (2). Ku
 Kui vajutada salvestus ikooni kõrval oleva X nupul avaneb kontroll küsimusega modaal
  
 NB! Ei saa lisada kodutöid möödunud aega.
+
+
+
+
+
+## Chapter 1 <div id="Chapter1"></div>
+
+Some text here.  
+Some text here.
+Some text here.
+
+## Chapter 2 <span id="Chapter2"><span>
+
+Some text here.  
+Some text here.
+Some text here
